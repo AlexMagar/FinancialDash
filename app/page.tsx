@@ -2,6 +2,7 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import style from '@/app/ui/home.module.css'
+import { lusitana } from "@/app/ui/fonts";
 
 export default function Page() {
   return (
@@ -30,7 +31,7 @@ export default function Page() {
           {/* Add Hero Images Here */}
         </div>
       </div>
-      <div className={style.shape} />
+      <p className={`${lusitana.className}`}>This the only the demo for the font</p>
       <div 
         className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
       />
