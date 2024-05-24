@@ -4,8 +4,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata ={
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: '%s | Finance Dashboard',
+    default: 'Finance Dashboard',
   },
   description: 'The offical Next.js Course Dashboard, built with App Router',
   metadataBase: new URL('https://nextjs.org'),
