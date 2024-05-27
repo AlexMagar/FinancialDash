@@ -20,7 +20,7 @@ const FormSchema = z.object({
     date : z.string(),
 })
 
-const CreateInvoice = FormSchema.omit({id: true, date: true})
+const CreateInvoice = FormSchema.omit({id: true, date: true});
 const UpdateInvoice = FormSchema.omit({id: true, date: true});
 
 export async function createInvoice(formData: FormData) {
@@ -68,8 +68,6 @@ export async function updateInvoice(id:string, formData : FormData) {
             message: 'Database Error: Failed to Update Invoice.'
         }
     }
-    
-
     revalidatePath('/dashboard/invoices')
     redirect('/dashboard/invoices')
 }
@@ -87,7 +85,6 @@ export async function deleteInvoice(id:string) {
     
     
 }
-
 export async function authenticate(
     prevState:string | undefined,
     formData: FormData,
